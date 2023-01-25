@@ -44,7 +44,8 @@ class Main {
     public static void main(String[] args) {
         String name;
         boolean flag = true;
-        double accNum, balance;
+        double accNum;
+        double balance;
         int choice;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Customer name : ");
