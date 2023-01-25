@@ -44,16 +44,16 @@ class Main {
     public static void main(String[] args) {
         String name;
         boolean flag = true;
-        double acc_num, balance;
+        double accNum, balance;
         int choice;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Customer name : ");
         name = sc.nextLine();
         System.out.println("Enter Account number : ");
-        acc_num = sc.nextDouble();
+        accNum = sc.nextDouble();
         System.out.println("Enter initial Balance : ");
         balance = sc.nextDouble();
-        MyBankAccount bb = new MyBankAccount(name, acc_num, balance);
+        MyBankAccount bb = new MyBankAccount(name, accNum, balance);
         System.out.println("Welcome " + bb.getName() + ".");
         System.out.println("Your Account balance when your account is created : " + bb.balance() + ".");
         while (flag) {
