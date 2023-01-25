@@ -4,12 +4,12 @@ import java.util.*;
 
 public class MyBankAccount {
     private String name;
-    private double acc_num;
+    private double accNum;
     private double balance;
 
-    MyBankAccount(String name, double acc_num, double balance) {
+    MyBankAccount(String name, double accNum, double balance) {
         this.name = name;
-        this.acc_num = acc_num;
+        this.accNum = accNum;
         this.balance = balance;
     }
 
@@ -19,7 +19,7 @@ public class MyBankAccount {
         System.out.println("Current Balance : " + balance + ".");
     }
 
-    void withdrawl(int money) {
+    void withdraw(int money) {
         if (balance < money) {
             System.out.println("Your balance is too low to withdraw the amount you requested.");
             System.out.println("Your current balance : " + balance + ". But you requested " + money + ".");
@@ -38,9 +38,6 @@ public class MyBankAccount {
         return name;
     }
 
-    double getAccNum() {
-        return acc_num;
-    }
 }
 
 class Main {
@@ -74,10 +71,10 @@ class Main {
                 case 2:
                     System.out.println("Enter money to withdraw from your account : ");
                     money = sc.nextInt();
-                    bb.withdrawl(money);
+                    bb.withdraw(money);
                     break;
                 case 3:
-                    System.out.println("Your Balnce is : " + bb.balance() + ".");
+                    System.out.println("Your Balance is : " + bb.balance() + ".");
                     break;
                 default:
                     flag = false;
