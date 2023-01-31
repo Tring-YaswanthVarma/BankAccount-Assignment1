@@ -98,7 +98,7 @@ class Main {
             }
             sc.close();
         }
-        catch (Exception e) {
+        catch (InputMismatchException e) {
             logger.info("Something went wrong while giving input");
         }
     }
