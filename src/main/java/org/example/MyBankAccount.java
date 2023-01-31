@@ -52,7 +52,6 @@ public class MyBankAccount {
 class Main {
     public static void main(String[] args) {
         Logger logger = Logger.getLogger("com.api.jar");
-        try {
             String name;
             boolean flag = true;
             double accNum;
@@ -97,10 +96,6 @@ class Main {
                 }
             }
             sc.close();
-        }
-        catch (InputMismatchException e) {
-            logger.info("Something went wrong while giving input");
-        }
     }
 }
 
